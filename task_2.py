@@ -3,7 +3,7 @@ def write_recipes_from_file(file_name, recipe_book):
         data = []
         for line in file:
             data.append(line.strip())
-        while data[-1] == '':  # обрезка пустых строк в конце файла
+        while data[-1] == '':
             data = data[:-1]
         recipes_number = data.count('') + 1
         for i in range(1, recipes_number):
